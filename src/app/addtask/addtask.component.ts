@@ -21,11 +21,22 @@ import { DatePipe } from '@angular/common';
 export class AddtaskComponent {
        task:any[]=[];
        filteredItems: any[]=[];
-
-       searchText:any='';
+       _filtertext:string='';
+       ischecked:boolean=false;
+       
+       
       
    constructor(public dialog:MatDialog){ }
 
+   get filtertext(){
+     return this._filtertext;
+   }
+   set filtertext(value:string){
+      this._filtertext=value;
+      this.filteredItems=this.filterstudent(value);
+      console.log(this.filteredItems)
+     
+   }
    opendialog():void{
       const dialogRef=this.dialog.open(PopupComponent,{
        
@@ -39,11 +50,33 @@ export class AddtaskComponent {
       dialogRef.afterClosed().subscribe(result=>{
         console.log('the dialog was closed');
         this.task.push(result);
-        console.log(this.task)
+        this.filteredItems=this.task;
+        console.log(this.filteredItems)
+        
       });
      
    }
-   filterItems() {
-    this.filteredItems = this.task.filter(task => task.taskinput.toLowerCase().includes(this.searchText.toLowerCase()));
-  }
+
+   /* filterstudent(filterterm:string):any[]{
+        if(this.filteredItems.length===0 || filterterm===''){
+          return this.filteredItems;
+        }else{
+          return this.filteredItems.filter(task=>task.taskinput.toLowerCase()===filterterm.toLowerCase())
+          }
+        } */
+        filterstudent(filterTerm: string,): any[] {
+          if (filterTerm==='' || this.filteredItems.length===0 ) {
+            
+            return this.task;
+          }
+        
+          const normalizedFilterTerm = filterTerm.toLowerCase();
+        
+          return this.filteredItems.filter(task => {
+           
+            return task.taskinput.toLowerCase().includes(normalizedFilterTerm);
+          });
+        }
+        
+   
 }

@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatIconModule} from '@angular/material/icon';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { ScaleLinear, ScalePoint, ScaleTime } from 'd3-scale';
+import { BaseType } from 'd3-selection';
+import { CurveFactory } from 'd3-shape';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +27,8 @@ import {MatNativeDateModule} from '@angular/material/core';
 
 import { DatePipe } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { BarchartComponent } from './barchart/barchart.component';
+import { PiechartComponent } from './piechart/piechart.component';
 
 
 @NgModule({
@@ -33,7 +39,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LayoutComponent,
     NavbarComponent,
     SidebarComponent,
-    DashboardComponent
+    DashboardComponent,
+    BarchartComponent,
+    PiechartComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +59,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatFormFieldModule,
     DatePipe,
     MatIconModule,
+    NgxChartsModule,
+    
 
   ],
   providers: [],

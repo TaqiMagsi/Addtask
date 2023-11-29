@@ -5,7 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddtaskComponent } from './addtask/addtask.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home/todo', pathMatch: 'full' },
   { path: 'home', component: LayoutComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'todo', component: AddtaskComponent },
