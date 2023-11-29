@@ -1,0 +1,28 @@
+<form [formGroup]="myform" (ngsubmit)="onSave()" >
+<h1 class="d-flex align-items-center" mat-dialog-title>Add Task
+    
+    <button class="btn btn-danger border" (click)="oncancel()">x</button>
+</h1>
+
+<div mat-dialog-content>
+    <mat-form-field appearance="outline" >
+        <mat-label>Task Input</mat-label>
+        <input formControlName="taskinput" matInput placeholder="Title" >
+      </mat-form-field>
+    <mat-form-field class="px-5 pt-2" appearance="outline">
+        <mat-label>Choose a date</mat-label>
+        <input formControlName="taskdate" matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      
+    <textarea formControlName="taskdata" placeholder="Description" class="form-control mt-3" rows="5" maxlength="100"></textarea>
+</div>
+<div mat-dialog-actions>
+    <div style="margin-left: 70%;">
+        <button mat-raised-button color="warn" (click)="oncancel()">Cancel</button>
+        <button mat-raised-button [disabled]="myform.invalid" color="primary" (click)="onSave()">Save</button>
+    </div>
+</div>
+</form>

@@ -1,0 +1,172 @@
+.navbar{
+    background-color: #ffffff;
+    width: 100%;
+    height: 79px;
+  }
+  .h1{
+     font-size: 15px;
+     font-weight: 700;
+     margin-bottom: 0px;
+     line-height: 20px;
+  }
+  .h2{
+     font-size: 14px;
+     font: 400;
+     margin-bottom: 0px;
+     color: #969696;
+     line-height: 17px;
+  }
+  .form-select{
+      color: #969696;
+      position: relative;
+  }
+  input{
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 17px;
+      width: 165px;
+      height: 17px;
+      padding: 12px 0px;
+  }
+  .content{
+      margin-left: 50px;
+  }
+  .h3{
+      font-size: 24px;
+      font-weight: 700;
+  }
+  .lb{
+      color: #969696;
+      font-size: 13px;
+      font-weight: 400;
+  }
+  .card-heading{
+      font-size: 20px;
+      font-weight: 700;
+  }
+  .card{
+      width: 323px;
+      height: 189px;
+  }
+  a{
+      color: #5735D2;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+  }
+  .ER{
+      font-size: 18px;
+      font-weight: 700;
+  }
+  .cash{
+  color: #969696;
+  font-weight: 500;
+  size: 15px;
+  
+  
+  }
+  ul{
+      list-style-type: none;
+      padding:0px;
+  }
+  li{
+      font-size: 16px;
+      font-weight: 400;
+      color: #BBBBBB;
+      font-family: Plus Jakarta Sans;
+  }
+  .currency{
+      font-size: 16px;
+      font-weight: 700;
+      color: #646464;
+      
+  }
+  .icon{
+      width: 24px;
+      
+  }
+  .No{
+      color: #BBBBBB;
+      font-weight: 400;
+      font-size: 16px;
+  }
+  .arrow{
+      
+      
+  }
+  .Features-Heading{
+      font-size: 18px;
+      font-weight: 700;
+  }
+  .bi{
+      font-size: 22px;
+      color: #BBBBBB;
+  }
+  .create-invoice{
+      font-weight: 700;
+      font-size: 16px;
+      color: #323232;
+  }
+  .l1{
+      color: #BBBBBB;
+      font-weight: 400;
+      font-size: 14px
+      ;
+      line-height: 17px;
+  }
+  .bicon{
+      font-size: 17px;
+      color: #BBBBBB; 
+      
+  }
+  
+  .Recent-head{
+      color: #323232;
+      font-size: 18px;
+      font-weight: 700;
+  }
+  .his{
+      color: #5735D2;
+      font-weight: 400;
+      font-size: 16px;
+      background-color: #FFFFFF;
+  }
+  .up{
+      color: #969696;
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 20px;
+      background-color: #FFFFFF;
+  }
+  .plus{
+      
+      color: #FFFFFF;
+      background-color: #5735D2;
+      height: 32px;
+      width: 40px;
+      font-size: 30px;
+      font-weight: 100;
+      font-family: 'Times New Roman', Times, serif;
+      margin-left: 520px;
+      
+  }
+  .date{
+      color: #BBBBBB;
+      font-weight: 400;
+      font-size: 14px;
+  }
+  .acitivity-heading{
+      font-size: 16px;
+      font-weight: 700;
+      color: #323232;
+  }
+  .activity-label{
+      color: #323232;
+      font-weight: 500;
+      size: 14px;
+  
+  }
+  .price{
+      font-weight: 700;
+      
+  }
